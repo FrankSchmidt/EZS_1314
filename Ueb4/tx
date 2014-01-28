@@ -1,0 +1,26 @@
+unter:ueb4 bughunter$ gcc -Wall u4.c -o u4 -v
+Apple LLVM version 5.0 (clang-500.2.79) (based on LLVM 3.3svn)
+Target: x86_64-apple-darwin13.0.2
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.9.0 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -main-file-name u4.c -mrelocation-model pic -pic-level 2 -mdisable-fp-elim -masm-verbose -munwind-tables -target-cpu core2 -target-linker-version 224.1 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.0 -Wall -fdebug-compilation-dir /Users/bughunter/code/beuth/ezs_1314/ueb4 -ferror-limit 19 -fmessage-length 204 -stack-protector 1 -mstackrealign -fblocks -fobjc-runtime=macosx-10.9.0 -fobjc-dispatch-method=mixed -fobjc-default-synthesize-properties -fencode-extended-block-signature -fdiagnostics-show-option -fcolor-diagnostics -o /var/folders/_k/6kvkbrxj2kng_tc5s97pgl980000gn/T/u4-WcgWAk.o -x c u4.c
+clang -cc1 version 5.0 based upon LLVM 3.3svn default target x86_64-apple-darwin13.0.2
+ignoring nonexistent directory "/usr/local/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.0/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.9.0 -o u4 /var/folders/_k/6kvkbrxj2kng_tc5s97pgl980000gn/T/u4-WcgWAk.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+Undefined symbols for architecture x86_64:
+  "_acquire", referenced from:
+      _writeFile in u4-WcgWAk.o
+      _readFile in u4-WcgWAk.o
+  "_release", referenced from:
+      _writeFile in u4-WcgWAk.o
+      _readFile in u4-WcgWAk.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+bughunter:ueb4 bughunter$
